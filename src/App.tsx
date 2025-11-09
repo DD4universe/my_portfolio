@@ -8,6 +8,12 @@ import LoadingAnimation from "@/components/LoadingAnimation";
 import NotFound from "./pages/NotFound";
 
 const Index = lazy(() => import("./pages/Index"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const SkillsPage = lazy(() => import("./pages/SkillsPage"));
+const ProjectsPage = lazy(() => import("./pages/ProjectsPage"));
+const EducationPage = lazy(() => import("./pages/EducationPage"));
+const ChatPage = lazy(() => import("./pages/ChatPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
 
 const queryClient = new QueryClient();
 
@@ -33,6 +39,12 @@ const App = () => {
           <Suspense fallback={<LoadingAnimation />}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/skills" element={<SkillsPage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/education" element={<EducationPage />} />
+              <Route path="/chat" element={<ChatPage />} />
+              <Route path="/contact" element={<ContactPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

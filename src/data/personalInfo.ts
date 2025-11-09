@@ -31,21 +31,21 @@ export interface PersonalInfo {
 // Durai's Personal Information
 export const DURAI_PERSONAL_INFO: PersonalInfo = {
   fullName: "Durai B",
-  dateOfBirth: "2003-06-15", // You can update this with Durai's actual birth date
+  dateOfBirth: "2007-05-26", 
   location: {
     city: "Cuddalore District",
     state: "Tamil Nadu",
     country: "India"
   },
   contact: {
-    email: "duraib@gmail.com",
-    phone: "+91 8770 6343"
+    email: "itsdurai04@gmail.com",
+    phone: "+91 6369704741"
   },
   education: {
     current: "Bachelor of Engineering in Computer Science",
     field: "Computer Science",
     specialization: "IoT (Internet of Things)",
-    graduationYear: 2025
+    graduationYear: 2028
   },
   languages: [
     { name: "Tamil", proficiency: "Native" },
@@ -118,10 +118,10 @@ export class PersonalInfoHelper {
     
     if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) return "Aries";
     if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) return "Taurus";
-    if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) return "Gemini";
+    if ((month == 5 && day <= 21) || (month == 6 && day <= 20)) return "Gemini";
     if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) return "Cancer";
     if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) return "Leo";
-    if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) return "Virgo";
+    if ((month == 8 && day >= 23) || (month == 5 && day >= 22)) return "Virgo";
     if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) return "Libra";
     if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) return "Scorpio";
     if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) return "Sagittarius";

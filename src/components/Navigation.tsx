@@ -78,6 +78,21 @@ const Navigation = () => {
                   <span className="hidden lg:inline">{item.label}</span>
                 </Button>
               ))}
+
+              {/* Buy Project CTA */}
+              <a
+                href="https://core-innovation-ch.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2"
+              >
+                <Button
+                  size="sm"
+                  className="hero-gradient text-white px-4 py-2 hover:scale-105 transition-transform duration-200"
+                >
+                  Buy Project
+                </Button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -113,6 +128,17 @@ const Navigation = () => {
                     <span>{item.label}</span>
                   </Button>
                 ))}
+
+                {/* Mobile Buy CTA */}
+                <a
+                  href="https://core-innovation-ch.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="col-span-2 mt-2"
+                >
+                  <Button className="w-full hero-gradient text-white">Buy Project</Button>
+                </a>
               </div>
             </div>
           </div>
