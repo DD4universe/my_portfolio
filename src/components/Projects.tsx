@@ -6,6 +6,24 @@ import { ExternalLink, Github, Code2 } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "DURAI Document Converter",
+      description:
+        "A modern web-based document creation platform with AI-powered content generation. Create professional documents in seconds with intuitive document generator. Choose from 6 document types (Permission Letters, Cover Letters, Resumes, Leave Applications, Greeting Cards, Business Letters), select from 18+ professionally designed templates, customize colors and fonts, and let AI generate intelligent content suggestions for every field.",
+      technologies: ["React", "AI/ML", "PDF Generation", "TypeScript", "Client-side Processing"],
+      type: "Full Stack",
+      features: [
+        "AI-powered content suggestions",
+        "8 color themes & 7 font styles",
+        "Fully responsive design",
+        "Client-side processing (no data sent to servers)",
+        "Instant PDF generation",
+        "Live preview",
+      ],
+      status: "Completed",
+      category: "Web Development",
+      link: "https://dd-doc-ai.vercel.app/",
+    },
+    {
       title: "Helpio4 - Digital Health Ecosystem",
       description:
         "Built a digital health ecosystem connecting doctors, patients, and medical shops with a voice-enabled AI assistant and Firebase-powered backend for secure verification, data intelligence, and communication flow.",
