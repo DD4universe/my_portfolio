@@ -264,39 +264,41 @@ const Projects = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex gap-2 pt-4">
+                <div className="flex gap-2 pt-4 relative z-10">
                   {project.codeLink && (
-                    <Button
-                      asChild
-                      size="sm"
-                      variant="outline"
-                      className="flex-1 glass-card border-primary/30 hover:bg-primary/10 hover:scale-105 hover:shadow-lg hover:border-primary transition-all duration-300 group/btn"
+                    <a
+                      href={project.codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 relative z-10"
+                      onClick={(e) => e.stopPropagation()}
                     >
-                      <a
-                        href={project.codeLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="w-full glass-card border-primary/30 hover:bg-primary/10 hover:scale-105 hover:shadow-lg hover:border-primary transition-all duration-300 group/btn"
                       >
                         <Github className="mr-2 h-4 w-4 group-hover/btn:rotate-12 transition-transform duration-300" />
                         Code
-                      </a>
-                    </Button>
+                      </Button>
+                    </a>
                   )}
                   {project.link && (
-                    <Button
-                      asChild
-                      size="sm"
-                      className="flex-1 hero-gradient text-white hover:scale-105 hover:shadow-2xl hover:shadow-primary/50 transition-all duration-300 group/btn"
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 relative z-10"
+                      onClick={(e) => e.stopPropagation()}
                     >
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Button
+                        size="sm"
+                        className="w-full hero-gradient text-white hover:scale-105 hover:shadow-2xl hover:shadow-primary/50 transition-all duration-300 group/btn"
                       >
                         <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
                         Demo
-                      </a>
-                    </Button>
+                      </Button>
+                    </a>
                   )}
                 </div>
               </CardContent>
